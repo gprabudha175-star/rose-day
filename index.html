@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rose Day</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ================= PHASE 1 ================= -->
+    <div id="startScreen" class="scene">
+        <button id="startBtn">Tap to Begin</button>
+    </div>
+
+    <!-- ================= PHASE 2 ================= -->
+    <div id="morningScene" class="scene hidden">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="sun"></div>
+
+        <div class="morning-content">
+            <h1 class="morning-line line1">
+                Good Morning, <span class="highlight">My Dearest Sharvari</span>
+            </h1>
+            <p class="morning-line line2">
+                As the <strong>sun slowly rises</strong> and the world begins to breathe again,
+                the darkness fades — just like silence fades when
+                <strong>you enter my thoughts</strong>.
+            </p>
+            <p class="morning-line line3">
+                — Good Morning, <span class="signature">Dear Sharuu</span> 💫
+            </p>
+        </div>
+    </div>
+
+    <!-- ================= PHASE 3 ================= -->
+    <div id="dateScene" class="scene hidden date-scene">
+        <div class="glow-layer"></div>
+        <div class="date-content">
+            <p class="date-small">Today is</p>
+            <h1 class="date-big">7th February 2025</h1>
+            <p class="date-tagline">A moment written quietly into our story.</p>
+        </div>
+    </div>
+
+    <!-- ================= PHASE 4 ================= -->
+    <div id="roseScene" class="scene hidden rose-scene">
+        <span class="decor decor1">✨</span>
+        <span class="decor decor2">💖</span>
+        <span class="decor decor3">🌸</span>
+        <span class="decor decor4">💫</span>
+
+        <div class="rose-content">
+            <img src="assets/rose1.png" class="rose-img" alt="rose" />
+            <div class="rose-text">
+                <h1 class="rose-title">Happy Rose Day</h1>
+                <p class="rose-name">Sharvari</p>
+            </div>
+            <img src="assets/rose2.png" class="rose-img" alt="rose" />
+        </div>
+    </div>
+
+    <!-- ================= PHASE 5 ================= -->
+    <div id="letterScene" class="scene hidden letter-scene">
+        <div class="letter-wrap">
+            <p class="letter-paragraph">
+                From the moment you entered my life, something inside me settled into a quiet certainty.
+                Not loud, not dramatic — just sure. The kind of sure that feels like home.
+                Every smile of yours softens my sharp edges, and every word you speak lingers
+                longer than it should, exactly where I want it to.
+            </p>
+
+            <p class="letter-paragraph">
+                On this Rose Day, I don’t want to offer you just flowers or words that fade.
+                I want to offer you my patience, my loyalty, my desire, and my presence —
+                in moments that are gentle and in moments that are intense,
+                in silence and in laughter, in closeness and in longing.
+                You are not just loved — you are chosen, again and again.
+            </p>
+
+            <p class="letter-paragraph">
+                There is warmth here, a pull that feels right,
+                deep and respectful and undeniably real.
+                The kind that smiles before it touches, and stays even after the moment passes.
+            </p>
+
+            <p class="letter-sign">— Yours, <strong>Prabudha</strong></p>
+
+            <button id="openGiftBtn" class="gift-btn">
+                Tap to Open Your Gift 🎁
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= PHASE 6 ================= -->
+    <div id="giftScene" class="scene hidden gift-scene">
+
+        <div id="giftBox" class="gift-box hidden">
+            <img src="assets/gift-box.png" alt="Gift Box">
+            <p class="gift-instruction">Tap the box to open your surprise 💝</p>
+        </div>
+
+        <div id="chocolateReveal" class="gift-reveal hidden">
+            <img src="assets/chocolate.gif" alt="Chocolate">
+        </div>
+
+        <div id="roseReveal" class="gift-reveal hidden">
+            <img src="assets/rose.gif" alt="Rose">
+        </div>
+
+        <div id="finalWish" class="final-wish hidden">
+            <p>
+                Once again, Happy Rose Day my love.
+                You are sweetness and fire, comfort and desire — all in one soul.
+                I don’t just want moments with you, I want time, closeness,
+                and everything that feels real and warm between us.
+            </p>
+            <p class="wish-sign">— Forever yours, Prabudha ❤️</p>
+        </div>
+
+    </div>
+
+    <!-- ================= AUDIO ================= -->
+    <audio id="bgMusic" src="assets/music.mp3" preload="auto" loop></audio>
+    <audio id="clickSound" src="assets/click.mp3" preload="auto"></audio>
+
+    <!-- ================= SCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
